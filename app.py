@@ -5,8 +5,7 @@ import os
 app = Flask(__name__)
 
 genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
-	model = genai.GenerativeModel('gemini-1.5-pro')
-HTML_TEMPLATE = """
+		model = genai.GenerativeModel('gemini-2.0-flash')HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html>
 <head>
